@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 01</title>
+    <title>Document</title>
 </head>
 <body>
     <?php
-    echo "<h1>Hello, World, PHP-8!</h1>";
-    phpinfo();
+  for($i = 0; $i < 10; $i++) {
+      print "O quadrado de $i é " . $i * $i . "<br>";
+  }
     ?>
      <adress>
         <center>
@@ -16,5 +17,4 @@
         </center>
     </adress>
 </body>
-
 </html>
