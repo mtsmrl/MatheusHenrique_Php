@@ -33,10 +33,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar Cliente</title>
     <script>
-        function habilitarEdicao(campo) {
-            document.getElementById(campo).removeAtributte("readonly");
-        }
-    </script>    
+    function habilitarEdicao(campo) {
+        document.getElementById(campo).removeAttribute("readonly");
+    }
+</script>    
 </head>
 <body>
     <h2>Atualizar Cliente</h2>
@@ -65,12 +65,12 @@
                 <label for="telefone">Telefone:</label>
                 <input type="text" id="telefone" name="telefone"
             value="<?= htmlspecialchars($cliente['telefone']) ?>" readonly
-            onlick="habilitarEdicao('telefone')">
+            onclick="habilitarEdicao('telefone')">
 
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email"
             value="<?= htmlspecialchars($cliente['email']) ?>" readonly
-            onlick="habilitarEdicao('email')">
+            onclick="habilitarEdicao('email')">
 
             <button type="submit">Atualizar Cliente</button>
             </form>   
