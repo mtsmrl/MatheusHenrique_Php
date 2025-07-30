@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+     <!-- Navegação fixa no topo -->
+   <!-- Navegação fixa no topo -->
+   <div class="navbar">
+        <a href="index.php">Início</a>
+        <a href="inserirCliente.php">Inserir</a>
+        <a href="pesquisarCliente.php">Pesquisar</a>
+        <a href="atualizarCliente.php">Editar</a>
+        <a href="deletarcliente.php">Excluir</a>
+        <a href="listarClientes.php">Listar</a>
+    </div>
     <?php
     require_once 'conexao_pdo.php';
 
@@ -60,6 +72,7 @@ if(!$clientes) {
             </td>
     </tr>
     <?php endforeach; ?>
-</table>               
+</table>          
+   
 </body>
 </html>

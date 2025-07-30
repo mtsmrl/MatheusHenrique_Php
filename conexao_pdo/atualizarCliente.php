@@ -32,13 +32,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar Cliente</title>
+    <link rel="stylesheet" href="style.css">
     <script>
     function habilitarEdicao(campo) {
         document.getElementById(campo).removeAttribute("readonly");
     }
 </script>    
 </head>
+<link rel="stylesheet" href="styles.css">
 <body>
+      <!-- Navegação fixa no topo -->
+   <div class="navbar">
+        <a href="index.php">Início</a>
+        <a href="inserirCliente.php">Inserir</a>
+        <a href="pesquisarCliente.php">Pesquisar</a>
+        <a href="atualizarCliente.php">Editar</a>
+        <a href="deletarcliente.php">Excluir</a>
+        <a href="listarClientes.php">Listar</a>
+    </div>
     <h2>Atualizar Cliente</h2>
 
     <!-- Se houver erro, exibe a mensagem e o campo de buscar -->
